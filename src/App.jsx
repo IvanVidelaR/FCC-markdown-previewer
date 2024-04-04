@@ -71,15 +71,15 @@ function App() {
 
     return (
         <main >
-            <div class="credits">
+            <div className="credits">
                 <h1 id="project-title">Markdown Previewer</h1>
                 <p>by IvanVidelaR</p>
             </div>
-            <div class="container">
+            <div className="container">
                 <div id="editor-wrapper" className={editorVisible ? '' : 'hide'}>
                     <div className={editorVisible ? 'toolbar' : 'toolbar hide'}>
                         <p>Editor</p>
-                        <i class={previewerVisible ? 'fa fa-arrows-alt' : 'fa fa-compress'} onClick={togglePreviewer}></i>
+                        <i className={previewerVisible ? 'fa fa-arrows-alt' : 'fa fa-compress'} onClick={togglePreviewer}></i>
                     </div>
                     <textarea
                         className={editorVisible ? '' : 'hide'}
@@ -93,7 +93,7 @@ function App() {
                 <div id="preview-wrapper" className={previewerVisible ? '' : 'hide'}>
                     <div className={previewerVisible ? 'toolbar' : 'toolbar hide'}>
                         <p>Previewer</p> 
-                        <i class={editorVisible ? 'fa fa-arrows-alt' : 'fa fa-compress'} onClick={toggleEditor}></i>
+                        <i className={editorVisible ? 'fa fa-arrows-alt' : 'fa fa-compress'} onClick={toggleEditor}></i>
                     </div>
                     <div
                         className={previewerVisible ? '' : 'hide'}
