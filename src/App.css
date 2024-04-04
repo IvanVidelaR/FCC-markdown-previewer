@@ -1,0 +1,226 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px;
+  gap: 10px;
+  margin: auto;
+  width: 90%;
+}
+
+.credits {
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: center;
+}
+
+.credits p {
+  align-self: flex-end;
+  color: rgba(48, 46, 46, 0.998)
+}
+
+i {
+  cursor: pointer;
+}
+
+#project-title {
+  text-align: center;
+  color: #242424;
+  font-size: 3em;
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+}
+
+#editor-wrapper, #preview-wrapper {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+#preview-wrapper.hide {
+  width: 0%;
+  height: 0;
+}
+
+#editor-wrapper.hide {
+  width: 0%;
+  height: 0;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3F7CAC;
+  padding: 1rem 0.5rem;
+  border: 1px solid white;
+  box-shadow: 1px 1px 10px 2px #8F6593;
+  font-size: 1rem;
+  height: 5%;
+  z-index: 1;
+}
+
+.toolbar > p {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hide {
+  display: none;
+}
+
+#editor {
+  width: 100%;
+  height: 100%;
+  resize: vertical;
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  border: 0.5px solid white;
+  padding: 0 1rem;
+  box-shadow: 1px 1px 10px 2px #8F6593;
+}
+
+#preview {
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  border: 0.5px solid white;
+  background-color: #242424;
+  overflow-y: scroll;
+  box-shadow: 1px 1px 10px 2px #8F6593;
+  resize: vertical;
+}
+
+#preview blockquote {
+  border-left: 3px solid #3F7CAC;
+  color: #3F7CAC;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+#preview > p > code {
+  padding: 3px;
+}
+
+#preview code {
+  background: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+#preview pre {
+  display: block;
+  overflow: auto;
+  background: white;
+  padding: 5px;
+  line-height: 1.2;
+}
+
+#preview h1 {
+  border-bottom: 2px solid #3F7CAC;
+}
+
+#preview h2 {
+  border-bottom: 1px solid #3F7CAC;
+}
+
+#preview table {
+  border-collapse: collapse;
+}
+
+#preview td,
+#preview th {
+  border: 2px solid #3F7CAC;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#preview img {
+  max-width: 100%;
+}
+
+code {
+  color: #8F6593;
+}
+
+ul, ol {
+  padding: 0 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  
+  .container {
+    gap: 0;
+  }
+
+  .toolbar {
+    font-size: 0.9em;
+    height: 3%;
+  }
+
+  .credits {
+    flex-wrap: wrap;
+  }
+
+  #project-title {
+    font-size: 2em;
+  }
+
+  #editor-wrapper, #preview-wrapper {
+    height: auto;
+    width: 100%;
+  }
+
+  #editor {
+    width: 100%;
+    height: 80vh;
+    font-size: 0.7em;
+  }
+
+  .toolbar {
+    font-size: 0.9em;
+    height: 3%;
+    width: 100%;
+  }
+
+  #preview {
+    width: 100%;
+    height: 80vh;
+    font-size: 0.7em;
+    margin-right: -200px;
+  }
+
+  #preview > p > code, #preview pre, #preview code {
+    font-size: 0.9em;
+  }
+
+}
+
+@media screen and (min-width: 1920px) {
+
+  .toolbar {
+    font-size: 2em;
+    height: 7%;
+  }
+  #project-title {
+    font-size: 5em; 
+  }
+
+  #editor {
+    font-size: 2em; 
+  }
+
+  #preview {
+    font-size: 2em;
+  }
+
+  code {
+    font-size: 1em;
+  }
+}
+
