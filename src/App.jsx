@@ -73,8 +73,8 @@ function App() {
         <main >
             <div className="credits">
                 <h1 id="project-title">Markdown Previewer</h1>
-                <p>by IvanVidelaR</p>
-            </div>
+                <p>by <a href="https://www.linkedin.com/in/ivanvidelar/" target="_blank">IvanVidelaR </a><a href="https://github.com/IvanVidelaR/FCC-markdown-previewer" target="_blank"><i className="fa-brands fa-square-github credits-github"></i></a></p>
+			</div>
             <div className="container">
                 <div id="editor-wrapper" className={editorVisible ? '' : 'hide'}>
                     <div className={editorVisible ? 'toolbar' : 'toolbar hide'}>

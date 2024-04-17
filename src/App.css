@@ -19,6 +19,28 @@
   color: rgba(48, 46, 46, 0.998)
 }
 
+.container-credits {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.credits a{
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.credits a:hover {
+  color: #3F7CAC;
+  transform: scale(1.05);
+  text-shadow: 2px 2px 2px #fff;
+
+}
+
 i {
   cursor: pointer;
 }
